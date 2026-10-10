@@ -22,8 +22,8 @@
       <tr><th>Categoría</th><th>Datos</th></tr>
       <tr><td>Identificación y contacto</td><td>Nombre (opcional), correo electrónico y el avatar que elijas (una inicial o un emoji y un color; no usamos fotos).</td></tr>
       <tr><td>Cuenta</td><td>Identificador interno de usuario y contraseña (se guarda cifrada; nunca la vemos). Si entras con Apple o con Google, en lugar de contraseña guardamos el identificador que ese servicio asigna a tu cuenta; con Apple, además, un token que solo usamos para revocar el acceso de la App a tu Apple ID cuando eliminas tu cuenta. Nunca recibimos tu contraseña de Apple ni de Google. Si usas la App como invitado, solo un identificador interno, sin correo ni contraseña.</td></tr>
-      <tr><td>Financieros y patrimoniales</td><td>Los que tú registras: nombres de bancos y cuentas, saldos, límites de crédito, días de corte y pago, movimientos (monto, moneda, tipo de cambio, fecha, categoría y nota), gastos fijos y metas de ahorro (nombre, monto objetivo, fecha y aportaciones).</td></tr>
-      <tr><td>Preferencias</td><td>Categorías, configuración de alertas, plan contratado y tu consentimiento para usar la IA.</td></tr>
+      <tr><td>Financieros y patrimoniales</td><td>Los que tú registras: nombres de bancos y cuentas, saldos, límites de crédito, días de corte y pago, movimientos (monto, moneda, tipo de cambio, fecha, categoría y nota), gastos fijos, metas de ahorro (nombre, monto objetivo, fecha y aportaciones) y, si decides registrarlos, los últimos 4 dígitos de tus tarjetas (nunca el número completo).</td></tr>
+      <tr><td>Preferencias</td><td>Categorías, configuración de alertas, plan contratado, tu consentimiento para usar la IA y las palabras que relacionas con cada categoría al capturar (por ejemplo, «oxxo» → Súper), para sugerírtela la próxima vez.</td></tr>
     </table>
   </div>
   <p>No tratamos datos personales sensibles. No accedemos a tus cuentas bancarias: toda la información la capturas tú. La App no usa publicidad, no rastrea tu actividad en otras apps o sitios y no usa cookies.</p>
@@ -35,6 +35,7 @@
     <li>Crear y administrar tu cuenta, e iniciar sesión.</li>
     <li>Guardar tus movimientos, cuentas, categorías y metas de ahorro y mostrarte tus totales, análisis y avance.</li>
     <li>Calcular los ciclos de tus tarjetas de crédito y programar alertas en tu dispositivo.</li>
+    <li>Interpretar en tu dispositivo los gastos que escribes, dictas o fotografías, y sugerirte la categoría a partir de lo que ya confirmaste (sección 6).</li>
     <li>Convertir montos en dólares a pesos con el tipo de cambio FIX publicado por el Banco de México.</li>
     <li>Si tú lo autorizas, generar recomendaciones de ahorro con inteligencia artificial (sección 5).</li>
     <li>Responder tus solicitudes de soporte y de derechos ARCO.</li>
@@ -58,21 +59,25 @@
   <h2>5. Recomendaciones con inteligencia artificial</h2>
   <p>Esta función es opcional. Antes de usarla por primera vez, la App te pide permiso explícito y te explica qué se envía. Puedes retirarlo cuando quieras en <strong>Ajustes → Privacidad</strong>. Anthropic no usa los datos recibidos por su API para entrenar sus modelos. Las recomendaciones son sugerencias generales y no constituyen asesoría financiera.</p>
 
-  <h2>6. Conservación y eliminación</h2>
+  <h2>6. Captura inteligente: frases y fotos de tickets</h2>
+  <p>Cuando escribes o dictas un gasto («250 tacos con la de crédito») o tomas la foto de un ticket (función Premium), la App lo interpreta <strong>en tu iPhone</strong>: con reglas propias y, si tu iPhone tiene Apple Intelligence activado, con el modelo de lenguaje de Apple que funciona en el propio dispositivo. Ni el texto ni la foto se nos envían a nosotros ni a terceros para interpretarlos.</p>
+  <p>La foto del ticket se lee en tu iPhone y <strong>no se guarda ni se sube</strong>; la App solo pide permiso de cámara para leer tickets y, si eliges una foto de tu galería, solo accede a esa foto. Lo único que guardamos es el movimiento que tú confirmas y la palabra clave que asocias a su categoría. El dictado usa el teclado de tu iPhone y se rige por la configuración de dictado de Apple.</p>
+
+  <h2>7. Conservación y eliminación</h2>
   <p>Puedes usar la App sin registrarte, como <strong>invitado</strong>. Tus datos se guardan igual de protegidos, pero ligados solo a ese iPhone: si cierras sesión, borras la App o cambias de teléfono sin guardar tu cuenta, no podrás recuperarlos. Las cuentas de invitado que pasan <strong>90 días sin uso</strong> se eliminan automáticamente junto con todos sus datos. Puedes guardar tu cuenta en cualquier momento desde <strong>Ajustes → Guardar mi cuenta</strong>.</p>
   <p>Conservamos tus datos mientras tengas una cuenta. Puedes eliminar tu cuenta en cualquier momento desde <strong>Ajustes → Eliminar cuenta</strong>: se borran de inmediato y de forma permanente tu cuenta y todos tus datos de nuestra base de datos y, si entraste con Apple, revocamos el acceso de la App a tu Apple ID. Las copias de seguridad del proveedor se eliminan en sus ciclos normales, en un plazo máximo de 30 días.</p>
 
-  <h2>7. Derechos ARCO y revocación del consentimiento</h2>
+  <h2>8. Derechos ARCO y revocación del consentimiento</h2>
   <p>Tienes derecho a <strong>acceder</strong> a tus datos, <strong>rectificarlos</strong>, <strong>cancelarlos</strong> y <strong>oponerte</strong> a su tratamiento, así como a revocar tu consentimiento. Muchas de estas acciones las puedes hacer directamente en la App (editar o borrar datos, retirar el permiso de IA o eliminar tu cuenta).</p>
   <p>Para cualquier otra solicitud, escribe a <a href="mailto:contacto@tacode.pro">contacto@tacode.pro</a> desde el correo de tu cuenta, indicando tu nombre, el derecho que quieres ejercer y una descripción clara de tu solicitud. Te responderemos en un plazo máximo de 20 días hábiles y, si procede, la haremos efectiva dentro de los 15 días hábiles siguientes.</p>
 
-  <h2>8. Seguridad</h2>
+  <h2>9. Seguridad</h2>
   <p>Tus datos viajan cifrados (HTTPS). Cada usuario solo puede ver sus propios datos gracias a reglas de seguridad en la base de datos, y tu sesión se guarda en el llavero (Keychain) de tu iPhone. Pedimos contraseñas de al menos 8 caracteres con mayúscula, minúscula y número, y te avisamos por correo cuando cambia tu contraseña o se agrega una nueva forma de entrar a tu cuenta.</p>
 
-  <h2>9. Menores de edad</h2>
+  <h2>10. Menores de edad</h2>
   <p>La App está dirigida a personas mayores de 18 años. No recabamos intencionalmente datos de menores.</p>
 
-  <h2>10. Cambios a este aviso</h2>
+  <h2>11. Cambios a este aviso</h2>
   <p>Si cambiamos este aviso, publicaremos la nueva versión en esta página con su fecha de actualización y, si el cambio es relevante, te avisaremos en la App.</p>
 
   <footer>Libreta · <a href="../terminos/">Términos y condiciones</a> · <a href="../soporte/">Soporte</a></footer>
